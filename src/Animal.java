@@ -11,6 +11,15 @@ public abstract class Animal {
     protected Size size;
     protected String specialCare;
 
+
+    public String getType() {
+        return type;
+    }
+    public String petAnimal(){
+
+        return this.name+" is now happy.";
+    }
+
     @Override
     public String toString() {
         return "Animal{" +
