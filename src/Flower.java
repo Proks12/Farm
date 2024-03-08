@@ -5,6 +5,11 @@ public abstract class Flower {
     protected double neededArea;
     protected double chanceOfGrowth;
 
+
+
+    public void watering(Flower flower){
+        flower.chanceOfGrowth = chanceOfGrowth + 5;
+    }
     @Override
     public String toString() {
         return "Flower{" +

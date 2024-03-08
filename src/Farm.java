@@ -2,7 +2,7 @@ import java.net.Proxy;
 import java.util.ArrayList;
 
 public class Farm {
-
+    private int money;
     ArrayList<Animal> barnBig = new ArrayList<>();
     private int maxBigBarn = 10;
     ArrayList<Animal> barnSmall = new ArrayList<>();
@@ -24,6 +24,14 @@ public class Farm {
             }
             }
     }
+
+    public void sellBigAnimal(int indexOfAnimal){
+        money= money+barnBig.get(indexOfAnimal).getPrice();
+        barnBig.remove(indexOfAnimal);
+
+
+    }
+
     public void addToField(Flower flower){
         if (field.size()<=maxField){
             field.add(flower);
